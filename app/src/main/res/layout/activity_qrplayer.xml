@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
-    android:visibility="visible">
+    android:background="#3F51B5">
 
     <TextView
         android:id="@+id/textView2"
@@ -19,15 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ListView
-        android:id="@+id/myListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="-253dp" />
-
     <ImageButton
         android:id="@+id/btnMenu"
         android:layout_width="wrap_content"
@@ -39,25 +30,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Seleccionar grupo o fase"
+        android:layout_marginTop="24dp"
+        android:text="Para usar esta función se requiere tener previamente instalada en su dispositivo la aplicación QR Scanner"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FDFAF7F7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageButton
-        android:id="@+id/imageButtonDownArrow"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintStart_toEndOf="@+id/editText2"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteY="48dp" />
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/qr_icon" />
 
 </android.support.constraint.ConstraintLayout>

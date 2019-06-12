@@ -17,22 +17,35 @@ Button btnScore;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnTabla = findViewById(R.id.btntabla);
-        btnPlayer = findViewById(R.id.btnjugador);
-        btnScore = findViewById(R.id.btnmarcador);
+        btnTabla = findViewById(R.id.btnTabla);
+        btnPlayer = findViewById(R.id.btnPlayer);
+        btnScore = findViewById(R.id.btnScore);
         btnTabla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goToTabla();
             }
         });
+        btnPlayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToQRPlayer();
+            }
+        });
 
     }
 
+
     private void goToTabla() {
 
-        Intent intentTabla= new Intent(this, Tabla.class);
+        Intent intentTabla= new Intent(this, TablaActivity.class);
         startActivity(intentTabla);
+    }
+
+    private void goToQRPlayer() {
+
+        Intent intentQRPlayer= new Intent(this,QRPlayerActivity.class);
+        startActivity(intentQRPlayer);
     }
 
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="leftAmericup">32dp</dimen>
+    <dimen name="topAmericup">16dp</dimen>
+    <string name="AmericupBanner">COPA AMERICA 2019</string>
+</resources>

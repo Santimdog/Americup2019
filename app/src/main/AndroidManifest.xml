@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UI.Tabla"/>
+        <activity android:name=".UI.TablaActivity"/>
+        <activity android:name=".UI.QRPlayerActivity"/>
     </application>
 
 </manifest>
