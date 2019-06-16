@@ -3,12 +3,12 @@ package com.example.americup.model;
 import android.widget.ImageView;
 
 public class Team {
-    int id;
+    private int id;
     String name;
     int points;
-    ImageView imgequipo;
+    ImageView imgEquipo;
 
-    public int getId() {
+    private int getId() {
         return id;
     }
     public String getName(){
@@ -19,8 +19,8 @@ public class Team {
         return points;
     }
 
-    public ImageView getImgequipo() {
-        return imgequipo;
+    public ImageView getImgEquipo() {
+        return imgEquipo;
     }
 
 

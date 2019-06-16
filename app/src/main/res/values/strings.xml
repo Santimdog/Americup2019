@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Americup</string>
+    <string name="menu_title">Group select</string>
+    <string name="grpA">Grupo A</string>
+    <string name="grpB">Grupo B</string>
+    <string name="grpC">Grupo C</string>
 </resources>

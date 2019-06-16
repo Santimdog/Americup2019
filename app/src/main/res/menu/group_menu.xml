@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addItem"
+        android:alphabeticShortcut="a"
+        android:text="Team A"
+        android:numericShortcut="0"
+        android:title="Team A"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/removeItem"
+        android:alphabeticShortcut="r"
+        android:text="Team B"
+        android:numericShortcut="1"
+        android:title="T2"
+        app:showAsAction="always"></item>
+</menu>

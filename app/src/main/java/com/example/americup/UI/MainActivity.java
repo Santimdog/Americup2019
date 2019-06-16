@@ -11,7 +11,7 @@ import com.example.americup.R;
 public class MainActivity extends AppCompatActivity {
 Button btnTabla;
 Button btnPlayer;
-Button btnScore;
+Button btnMatches;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ Button btnScore;
         setContentView(R.layout.activity_main);
         btnTabla = findViewById(R.id.btnTabla);
         btnPlayer = findViewById(R.id.btnPlayer);
-        btnScore = findViewById(R.id.btnScore);
+        btnMatches = findViewById(R.id.btnScore);
         btnTabla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +30,12 @@ Button btnScore;
             @Override
             public void onClick(View v) {
                 goToQRPlayer();
+            }
+        });
+        btnMatches.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMatches();
             }
         });
 
@@ -48,4 +54,9 @@ Button btnScore;
         startActivity(intentQRPlayer);
     }
 
+    private void goToMatches() {
+
+        Intent intentSavedMatches= new Intent(this, SavedMatchesActivity.class);
+        startActivity(intentSavedMatches);
+    }
 }
