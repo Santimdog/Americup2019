@@ -18,7 +18,7 @@ public class TeamListFragment extends Fragment {
     }
     public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //super.onCreate(savedInstanceState);
-        View view= inflater.inflate(R.layout.fragment_team_list,container,false);
+        View view= inflater.inflate(R.layout.team_list_layout,container,false);
         return view;
     }
 }

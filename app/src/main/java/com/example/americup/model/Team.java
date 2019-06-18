@@ -1,14 +1,20 @@
 package com.example.americup.model;
 
-import android.widget.ImageView;
-
 public class Team {
     private int id;
-    String name;
-    int points;
-    ImageView imgEquipo;
+    public String name;
+    public int points;
+    public int flag;
 
-    private int getId() {
+
+    public Team(int id, String name, int points, int flag) {
+        this.id = id;
+        this.name = name;
+        this.points = points;
+        this.flag = flag;
+    }
+
+    public int getId() {
         return id;
     }
     public String getName(){
@@ -18,11 +24,31 @@ public class Team {
 
         return points;
     }
-
-    public ImageView getImgEquipo() {
-        return imgEquipo;
+    public int getFlag() {
+        return flag;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
+    }
+
+    @Override
+    public String toString() {
+        return "Team{" +
+                "name='" + name + '\'' +
+                ", points=" + points +
+                '}';
+    }
 }

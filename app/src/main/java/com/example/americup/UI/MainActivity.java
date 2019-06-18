@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.americup.R;
+import com.example.americup.model.Team;
 
 public class MainActivity extends AppCompatActivity {
 Button btnTabla;
@@ -59,4 +60,6 @@ Button btnMatches;
         Intent intentSavedMatches= new Intent(this, SavedMatchesActivity.class);
         startActivity(intentSavedMatches);
     }
+
+
 }
